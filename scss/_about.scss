@@ -1,0 +1,55 @@
+.about {
+    h2 {
+        @extend .title_h2;
+    }
+
+    &_wrap {
+        display: flex;
+        gap: 30px;
+    }
+
+    &_left {
+        position: relative;
+        width: 644px;
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+        .discount{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba($black, 0.5);
+            border-radius: 15px;
+            padding: 20px;
+            width: 100%;
+           
+            p{
+                @include font($fz:16px,$fw:700,$lh:32px);
+                color: var(--white);
+                max-width: 336px;
+            }
+            a{
+                padding: 16px 35px;
+                color: var(--white);
+                border: 3px solid var(--orange);
+                height: fit-content;
+                border-radius: 15px;
+
+                @include font($fz:16px,$fw:700);
+            }
+        }
+    }
+
+    &_right{
+        max-width: 556px;
+        @include font($lh:20px)
+    }
+}

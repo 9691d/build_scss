@@ -1,0 +1,4 @@
+.title_h2{
+    @include font($fz: 38px, $fw: 600);
+    margin-bottom: 20px;
+}

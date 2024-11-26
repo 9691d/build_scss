@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: "Montserrat",sans-serif;
+    // font-weight: 400;
+    @include font_all(16px);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.container {
+    display: block;
+    max-width: 1280px;
+    padding: 0 25px;
+    margin: 0 auto;
+}

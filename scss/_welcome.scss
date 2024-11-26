@@ -1,0 +1,44 @@
+.welcome {
+    .slider {
+        position: relative;
+        overflow: hidden;
+        max-width: 1230px;
+        height: 600px;
+
+        &_body {
+            display: flex;
+            width: fit-content;
+            height: 100%;
+            transition: .8s;
+        }
+
+        h2 {
+            position: absolute;
+            top: 40px;
+            left: 36px;
+            @include font($fz: 70px, $fw: 800);
+            max-width: 800px;
+            color: var(--white);
+        }
+
+        p {
+            position: absolute;
+            left: 36px;
+            top: 240px;
+            max-width: 550px;
+            @include font($fz: 24px, $fw: 600);
+            color: var(--white);
+        }
+
+        a {
+            position: absolute;
+            left: 36px;
+            bottom: 40px;
+            padding: 13.5px 26.8px;
+            background: var(--orange);
+            border-radius: 15px;
+            @include font($fz: 24px, $fw: 600);
+            color: var(--white);
+        }
+    }
+}
